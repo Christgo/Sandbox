@@ -13,7 +13,8 @@ for line in out_file:  # go through each line (how many lines)
 # find out how to remove everything after reading
 # set formatting so its less retarded
 print(books)
-print(books, "Hello", file=out_file)
+out_file.truncate(1)
+print(books, file=out_file)
 print(out_file.name)
 out_file.truncate(1)
 out_file.close()
